@@ -7,20 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <RadioButton x:Name="rbSmall" Content="Small" Margin="0,0,650,322" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="90"/>
-        <RadioButton x:Name="rbMedium" Content="Medium" Margin="0,0,650,297" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="90"/>
-        <RadioButton x:Name="rbLarge" Content="Large" Margin="0,0,650,272" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="90"/>
-        <CheckBox x:Name="checkBoxPepperoni" Content="Pepperoni" Margin="0,0,503,326" Height="16" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="78"/>
-        <CheckBox x:Name="chceckBoxSausage" Content="Sausage" Margin="0,0,503,297" Height="16" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="78"/>
-        <CheckBox x:Name="chechBoxMushrooms" Content="Mushrooms" Margin="0,0,503,268" Height="16" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="78"/>
-        <CheckBox x:Name="checkBoxPeppers" Content="Peppers" Margin="0,0,503,239" Height="16" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="78"/>
+        <RadioButton x:Name="rbSmall" Content="Small" Margin="0,0,650,322" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="90" Checked="rbSmall_Checked"/>
+        <RadioButton x:Name="rbMedium" Content="Medium" Margin="0,0,650,297" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="90" Checked="rbMedium_Checked"/>
+        <RadioButton x:Name="rbLarge" Content="Large" Margin="0,0,650,272" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="90" Checked="rbLarge_Checked"/>
+        <CheckBox x:Name="checkBoxPepperoni" Content="Pepperoni" Margin="0,0,503,326" Height="16" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="78" Checked="checkBoxPepperoni_Checked" Unchecked="checkBoxPepperoni_Unchecked"/>
+        <CheckBox x:Name="chceckBoxSausage" Content="Sausage" Margin="0,0,503,297" Height="16" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="78" Checked="chceckBoxSausage_Checked" Unchecked="chceckBoxSausage_Unchecked"/>
+        <CheckBox x:Name="chechBoxMushrooms" Content="Mushrooms" Margin="0,0,503,268" Height="16" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="78" Checked="chechBoxMushrooms_Checked" Unchecked="chechBoxMushrooms_Unchecked"/>
+        <CheckBox x:Name="checkBoxPeppers" Content="Peppers" Margin="0,0,503,239" Height="16" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="78" Checked="checkBoxPeppers_Checked" Unchecked="checkBoxPeppers_Unchecked"/>
         <Label x:Name="name" Content="Name" Margin="0,0,393,357" Height="26" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="48"/>
         <Label x:Name="numberOfPizzas" Content="Number of pizzas" Margin="0,0,321,289" Height="26" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="120"/>
         <Label x:Name="pizzaOrder" Content="Pizza order" Margin="0,0,187,357" Height="26" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="74"/>
         <TextBox x:Name="textBoxName" TextWrapping="Wrap" Width="120" Margin="0,0,321,322" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
         <TextBox x:Name="textBoxAmount" TextWrapping="Wrap" Width="120" Margin="0,0,318,210" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
-        <Button x:Name="btnRecord" Content="Record Transaction" Margin="0,0,318,145" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="120"/>
-        <ListBox Margin="0,0,21,210" Height="132" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="240"/>
+        <Button x:Name="btnRecord" Content="Record Transaction" Margin="0,0,318,145" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="120" Click="btnRecord_Click"/>
         <ComboBox x:Name="comboBoxNumber" Width="120" Margin="0,0,318,262" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Right">
             <ComboBoxItem Content="1"/>
             <ComboBoxItem Content="2"/>
@@ -28,10 +27,11 @@
             <ComboBoxItem Content="4"/>
             <ComboBoxItem Content="5"/>
         </ComboBox>
-        <Button x:Name="btnComplete" Content="Complete Transaction" Margin="0,0,21,145" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="240"/>
+        <Button x:Name="btnComplete" Content="Complete Transaction" Margin="0,0,21,145" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="240" Click="btnComplete_Click"/>
         <Label x:Name="totalAmount" Content="Total Amount" Margin="0,0,321,230" Height="26" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="120"/>
-        <CheckBox x:Name="checkBoxOlives" Content="Olives" Margin="0,0,503,210" Height="16" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="78"/>
-        <Label x:Name="labelSize" Content="Choose Size" HorizontalAlignment="Right" Margin="0,0,666,357" VerticalAlignment="Bottom"/>
-        <Label x:Name="labelToppings" Content="Toppings" HorizontalAlignment="Right" Margin="0,0,523,357" VerticalAlignment="Bottom"/>
+        <CheckBox x:Name="checkBoxOlives" Content="Olives" Margin="0,0,503,210" Height="16" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="78" Checked="checkBoxOlives_Checked" Unchecked="checkBoxOlives_Unchecked"/>
+        <TextBox x:Name="textBoxOrder" HorizontalAlignment="Right" Margin="0,0,21,210" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="240" Height="132"/>
+        <GroupBox Header="Choose size" Margin="0,0,616,232" Height="147" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="158"/>
+        <GroupBox x:Name="groupBoxTop" Header="Toppings" Margin="0,0,459,193" Height="187" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="145"/>
     </Grid>
 </Window>
