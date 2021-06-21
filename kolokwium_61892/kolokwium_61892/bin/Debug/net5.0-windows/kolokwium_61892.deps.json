@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "kolokwium_61892/1.0.0": {
+        "runtime": {
+          "kolokwium_61892.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "kolokwium_61892/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
